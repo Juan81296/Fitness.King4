@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:    10% 80% 10%;
+    grid-template-areas:  "header header"
+                           "main main"
+                           "footer footer";
+}
+/*HOME*/
+
+header{
+    background-image: linear-gradient(black, gray);
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    grid-area: header;
+}
+nav{
+    background-image: linear-gradient(black, rgb(94, 93, 93));
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.flexBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    }
+li{
+   list-style-type: none;
+   display: inline-block;
+   
+   
+}
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    display: inline-block;
+    padding-left: 50px ;
+    padding-right: 50px;
+    color: rgb(117, 117, 117);
+    font-weight: 800;
+    font-family: 'Oswald', sans-serif;
+}
+a:hover{
+    color:rgb(24, 99, 24) ;
+    transition: 0.4s;
+}
+main{
+    background-color: rgb(15, 112, 15);
+    height: 1000px;
+    width: 100%;
+    background-image: url("./img/fondo.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    grid-area:main ;
+ 
+  
+}
+#titulo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: rgb(21, 28, 87);
+    display: inline-block;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+#titulo2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+    color: rgb(24, 99, 24);
+    text-shadow: 2px white;
+    font-weight: bolder;    
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+.lugarTitulo{
+    position:relative;
+    top: 65%;
+    left: 65%;
+   
+    
+    
+    
+}
+#sucursal{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    display: inline-block;
+    font-weight: bolder;
+    top: 65%;
+    left: 65%;
+    position:relative;
+    color: gold;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    width: 100%;
+    background-image: url("./img/header.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    text-align: left;
+    padding-bottom: 13px;
+    text-align: center;
+    grid-area: footer;
+    
+}
+.datos{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1vw;
+    display: block;
+    color: rgb(31, 97, 36);
+    font-family: 'Oswald', sans-serif;
+}
+/*HOME*/
+
+/*PASE LIBRE*/
+ .mainPaseLibre{
+     background-image: url("./img/paselibre.jpg");
+ }
+ #tituloPaseLibre{
+    font-family: 'Oswald', sans-serif;
+    font-size: 6vw;
+    color: rgb(21, 28, 87);
+    display: inline-block;
+    font-weight: bolder;
+    padding-top: 50px;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+ }
+#tituloPaseLibre2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 6vw;
+    color: rgb(31, 97, 36);
+    display: inline-block;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-top: 28vw;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+#precio{
+    font-family: 'Oswald', sans-serif;
+    font-size: 6vw;
+    display: inline-block;
+    font-weight: bolder;
+    padding-left: 25vw;
+    position:absolute;
+    color: gold;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+#paseLibreDescripcion{
+    color: white;
+    font-size: 2vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-weight: 900;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+#paseLibreTexto{
+    color: rgb(31, 97, 36);
+    font-weight: bolder;
+    font-size: 2vw;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+/*PASE LIBRE*/
+
+/*CLASES*/
+.clasesMain{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: "funcional funcionalTexto"
+                         "box       boxTexto"
+                         "step      stepTexto"
+                         "hiit      hiitTexto";
+    background-image: url(./img/clases.jpeg);
+    height: 2800px;
+}
+#funcionalPosicion{
+    display: grid;
+    grid-area: funcional;
+    justify-content: center;
+    align-items: center;
+}
+#funcionalFoto{
+    height: 25vw;
+    width: 25vw;
+    border: 2px solid white;
+    transition: all 1.5s;
+    
+}
+#funcionalFoto:hover{
+    transform: scale(1.2,1.2);
+}
+#funcionalTexto{
+    display: grid;
+    font-size: 1.2vw;
+    line-height: 3vw;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    grid-area: funcionalTexto;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}  
+#boxPosicion{
+    display: grid;
+   grid-area: box;
+   justify-content: center;
+    align-items: center;
+}
+#boxFoto{
+    height: 25vw;
+    width: 25vw;
+    border: 2px solid white;
+}
+#boxFoto:hover{
+    transform: scale(1.2,1.2);
+    transition: all 1.5s;
+}
+#boxTexto{
+    display: grid;
+    grid-area: boxTexto;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    line-height: 3vw;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(187, 176, 29);
+    text-align: left;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+#stepFuncionalPosicion{
+    display: grid;
+    grid-area: step;
+    justify-content: center;
+    align-items: center;
+}
+#stepFuncionalFoto{
+    height: 25vw;
+    width: 25vw;
+    border: 2px solid white;
+}
+#stepFuncionalFoto:hover{
+    transform: scale(1.2,1.2);
+    transition: all 1.5s;
+}
+#stepFuncionalTexto{
+    display: grid;
+    grid-area: stepTexto;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    line-height: 3vw;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+#hiitPosicion{
+    display: grid;
+    grid-area: hiit;
+    justify-content: center;
+    align-items: center;
+}
+#hiitFoto{
+    height: 25vw;
+    width: 25vw;
+    border: 2px solid white;
+}
+#hiitFoto:hover{
+    transform: scale(1.2,1.2);
+    transition: all 1.5s;
+}
+#hiitTexto{
+    display: grid;
+    grid-area: hiitTexto;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    line-height: 3vw;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(187, 176, 29);
+    text-align: left;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+/*PASE LIBRE*/
+
+/*BAR*/
+.barMain{
+    background-image: url("./img/bar.jpg");
+}
+.barTexto{
+    display: block;
+}
+#barParrafo{
+    color: white;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    display: inline-block;
+    text-shadow: 2px 2px black;
+    text-align:left;
+    padding-top: 1vw;
+    font-weight: bolder;
+
+}
+#sabias{ 
+    color: rgb(31, 97, 36);
+    font-size: 2vw;
+    line-height: 0.4vw;
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    display: inline-block;
+    text-shadow: 2px 2px black;
+    text-align:left;
+    padding-top: 1vw;
+    font-weight: bolder;
+}
+#recuerden{
+    color: rgb(21, 28, 87);
+    font-size: 2vw;
+    line-height: 0.4vw;
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    display: inline-block;
+    text-shadow: 2px 2px black;
+    text-align:left;
+    padding-top: 1vw;
+    font-weight: bolder;
+}
+#comentario{
+    position: absolute;
+    top: 30vw;
+    left: 1vw;
+    height: 10vw;
+    width: 25vw;
+    font-size: 1vw;
+    font-family: 'Rubik', sans-serif;
+    border: 4px solid  rgb(31, 97, 36);
+}
+#enviar{
+    position: absolute;
+    top: 40.5vw;
+    left: 21.3vw;
+    height: 2vw;
+    width: 5vw;
+     font-family: 'Rubik', sans-serif;
+}
+#borrar{
+    position: absolute;
+    top: 40.5vw;
+    left: 16vw;
+    height: 2vw;
+    width: 5vw;
+    font-family: 'Rubik', sans-serif;
+}
+/*BAR*/
+
+/*CONTACTO*/
+.mainContacto{
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "izquierda1 centro1 derecha1"
+                         "izquierda2 centro2 derecha2"
+                         "izquierda3 centro3 derecha3";
+   
+}
+#unite{
+    display: grid;
+    grid-area: centro1;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    color: rgb(31, 97, 36);
+    font-weight: bolder;
+    text-shadow: 2px 2px  rgb(21, 28, 87);
+}
+
+.registro{
+    display: grid;
+    grid-area: centro2;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(86, 86, 87);
+    text-shadow: 2px 2px black;
+}
+@media only screen and ( max-width:600px){  
+    .contenedor{
+        height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:    10% 80% 10%;
+    grid-template-areas:  "header "
+                           "main "
+                           "footer ";
+                           transition: 0.4s;
+                           font-size: 1rem; 
+    }
+    nav{
+        display: flex;
+        justify-content:stretch;
+    }
+    .flexBox{
+        display: flex;
+        padding-right: 50px;
+  }
+  a{
+      font-size: 1rem;
+  }
+@media only screen and (min-width:600px){
+    
+    
+
+
+}
+@media only screen and (min-width:992px){
+    
+
+
+}
